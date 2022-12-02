@@ -9,11 +9,11 @@
     <title>Filmoteka</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container">                
+    <header class="header__library">
+      <div class="container__library">                
         <nav class="site-nav">
           <div class="site-nav__logo">
-            <button onclick="document.location='index.html'" type="text" class="button">
+            <button onclick="document.location='./index.html'"  type="text" class="button">
               <svg width="24" height="24" aria-label="Go to the main page">
                 <use href="./svg/symbol-defs.svg#icon-film-1"></use>
               </svg>
@@ -21,34 +21,22 @@
             <span class="site-nav__logo-name">Filmoteka</span> 
           </div>                         
           <ul class="site-nav__menu">
-            <li class="site-nav__menu--line">
-              <button  onclick="document.location='index.html'"type="text" class="button">HOME</button>
+            <li class="">
+              <a type="text" href="./index.html" class="button">HOME</a>
             </li>
-            <li class="site-nav__menu-item">
-              <button  onclick="document.location='library.html'" type="text"  class="button">MY LIBRARY</button>
+            <li class="site-nav__menu-item site-nav__menu--line">
+              <a type="text" href="" class="button">MY LIBRARY</a>
             </li>                        
           </ul>                    
-        </nav>
-        <form class="search__form" id="search-form">
-          <input class="input"
-            type="text"
-            name="searchQuery"
-            autocomplete="off"
-            placeholder="Movie search"            
-          />      
-          <button type="submit" class="button button__submit">
-            <svg width="12" height="12" aria-label="submit button">
-              <use href="./svg/symbol-defs.svg#icon-search-2-1"></use>
-            </svg>
-          </button>            
-          <p class="massage">Search result not successful. Enter the correct movie name and</p>
-        </form>                 
+        </nav> 
+        <button class="button__library">WATCHED</button> 
+        <button class="button__library button__library--inline">QUEUE</button>                 
       </div>     
-  </header>
+  </header> 
 
   <main>
     <div class="container">
-      <div class="filmoteka">      
+      <div class="librery">      
       </div>
     </div>   
   </main>
@@ -64,9 +52,7 @@
         <p>by GoIT Students</p>
       </div>   
     </div>   
-  </footer>   
+  </footer>
     
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="./index.js" type="module"></script>
   </body>
 </html>

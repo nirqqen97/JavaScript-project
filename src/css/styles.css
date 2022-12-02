@@ -1,0 +1,352 @@
+
+ ul {
+  list-style: none; 
+  margin: 0;   
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+.clear{
+  opacity: 0;
+}
+
+/* ---------------------- */
+
+.header { 
+  width: 100%;
+  margin-left: auto; 
+  margin-right: auto;
+  padding:44px 0px;
+
+  background-image: url(../images/abstract-background-with-red-lines\ .jpg);
+  background-size: cover;
+ 
+  color:white;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;  
+} 
+/* --------------------------- */
+.container { 
+  max-width: 320px;   
+  padding:0px 20px; 
+  margin:auto; 
+}
+/* ------------------------------- */
+.site-nav{
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 60px;
+  text-align: center;
+  align-self: center;
+}
+
+.site-nav__menu{
+  display: flex; 
+  text-align: center;
+  align-self: center;  
+}
+
+.site-nav__menu-item{
+  margin-left: 40px;
+}
+
+.site-nav__menu--line {
+  position: relative;
+}
+    
+.site-nav__menu--line::after {  
+  display:inline-block;
+
+  position: absolute;
+  top: 18px;
+  right: 0px;
+  content: '';
+    
+  width: 100%;
+  height: 3px;
+  background-color:#FF001B;;
+}
+
+.site-nav__logo {  
+  font-size: 30px;
+  line-height: 1.17;    
+}
+
+.site-nav__logo-name{
+  display:none;
+}
+
+/* ------------------- */
+.search__form{
+  position: relative;
+  color: white;
+}
+
+.input {   
+  width: 100%; 
+  margin-bottom: 20px;
+
+  background:transparent;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  border-color: white;
+  border-width: 1px; 
+  color: white;   
+}
+
+::placeholder {  
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;  
+}
+
+.massage {  
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  color: #FF001B;
+}
+
+/* ----------------------- */
+.button {
+  background-color: Transparent;  
+  border: none;
+  cursor:pointer;  
+  padding: 0;
+  
+  color:white;  
+  font-size: 12px;
+  line-height: 1.17;  
+}
+
+.button__submit{ 
+  position: absolute; 
+  top: 5%;
+  left: 95%;
+  fill:white;   
+}
+/* --------------------- */
+.filmoteka {
+  display: flex; 
+  flex-wrap: wrap;
+  margin: 20px 0px;
+ 
+  justify-content: center;
+}
+.photo-card {  
+  margin-bottom: 20px;
+  width: 280px;
+  height: 443px;  
+  border-radius: 5px;
+}
+
+.photo-card__link{
+  border-radius: 5px;  
+}
+
+.info{
+  font-family: Roboto, sans-serif;
+  font-style: medium;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.17;
+  font-size: 12px;  
+  line-height: 114%;
+  color:  #000000; 
+  margin-top: 10px; 
+}
+
+.info-item{
+  margin-top: 3px;
+  color: #FF6B08;
+  text-transform: capitalize;
+}
+
+/* ---------------------- */
+.footer{ 
+  text-align: center;  
+  padding: 30px 0;   
+
+  color: #545454;
+  background-color: #F7F7F7;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  line-height: 1.17;
+  font-size: 16px;  
+}
+
+.footer__icon{
+  margin: 0 10px;  
+}
+
+.footer__item{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============================ */
+.header__library { 
+  width: 100%;
+  background-image: url(../images/Rectangle\ 1.jpg);
+  background-size:auto;
+  margin-left: auto; 
+  margin-right: auto;
+  padding-top:40px;
+  padding-bottom: 76px;
+  color:white;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;  
+} 
+
+.container__library { 
+  padding:0px 20px; 
+  margin:auto;
+  max-width: 320px; 
+  text-align: center;
+}
+
+.button__library {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  padding: 14px 36px;
+
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  line-height: 1.17;
+  font-size: 12px;
+
+    
+  color:white;
+  background-color: #FF6B01;
+  border-radius: 4px;
+  border: 1px solid transparent;   
+          
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button__library--inline{
+  color: white;
+  border-color: white;
+  background-color:rgba(0, 0, 0, 0.08);
+  margin-left: 20px;
+}
+
+.button__library:hover, .button__library:focus       {
+  color:white;
+  border-color:white;
+  background-color: rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.button__library--inline:hover, .button__library:focus       {
+  color:white;
+  border-color:#FF6B01;
+  background-color: #FF6B01;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* ----------------------------- */
+@media (min-width: 768px){
+  .container{  
+    max-width: 768px;
+    text-align: center;      
+    padding: 0px 32px;
+  }
+
+  .container__library{    
+    max-width: 768px;       
+    padding: 0px 32px;
+  }
+
+  .header{
+    background-image: url(../images/abstract-background-with-red-lines\ 1.jpg);
+  }
+
+  .header__library{
+    background-image: url(../images/Rectangle\ .jpg);
+  }
+
+  .input {
+    width: 336px;
+  }
+
+  .button__submit{  
+    left: 70%;
+  }
+
+  .site-nav__logo-name{
+    display: inline;
+  } 
+
+  .photo-card {  
+    margin-bottom: 32px;
+    width: 336px;
+    height: 495px; 
+  }
+  
+  .photo-card:nth-child(even) {
+    margin-left: 32px;
+  }
+
+  .info{
+    text-align: left;    
+    margin-top: 8px;
+  }
+
+  .filmoteka{    
+    margin: 60px 0px;
+  }
+
+  .footer{ 
+    display:flex;
+    justify-content: center;
+    margin-top: -32px;    
+  }  
+}  
+
+@media (min-width: 1280px) {
+  .container{ 
+    max-width: 1280px;    
+  }
+
+  .input {
+    width: 394px;
+  }  
+   
+  .button__submit{  
+    left: 64%;
+  }
+
+  .photo-card{
+    margin-right: 16px;
+    width: 395px;
+    height: 634px; 
+  }
+
+  .photo-card:nth-child(even) {
+    margin-left: 0;
+  }
+
+  .filmoteka{    
+    margin-right: -16px;
+  }
+}
