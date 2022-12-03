@@ -1,10 +1,11 @@
 export const refs = {
   body: document.querySelector('body'),
-  input: document.getElementById('input'),
+  input: document.querySelector('.input'),
   searchForm: document.getElementById('search-form'),
   filmCards: document.querySelector('.js-film-cards'),
-
+  hideText:  document.querySelector('.js-hidden-btn'),
   searchBtn: document.querySelector('.js-search-btn'),
+  markUp : document.querySelector('.js-markUp'),
 
   header: document.getElementById('header'),
   homeLink: document.querySelector('.js-link-home'),
