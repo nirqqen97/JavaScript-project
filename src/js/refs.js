@@ -1,9 +1,9 @@
-export const refs = {
+export const refs={
   body: document.querySelector('body'),
-  input: document.getElementById('input'),
+  input: document.querySelector('input'),
   searchForm: document.getElementById('search-form'),
   filmCards: document.querySelector('.js-film-cards'),
-  hideMessage: document.querySelector('js-hide-message'),
+  hideMessage: document.querySelector('.js-hide-message'),
 
   searchBtn: document.querySelector('.js-search-btn'),
 
@@ -30,4 +30,4 @@ export const refs = {
 
   paginationContainer: document.querySelector('.js-pagination'),
 };
-
+export default refs;
