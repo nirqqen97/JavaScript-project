@@ -29,4 +29,11 @@ export const refs = {
   preloadWrap: document.querySelector('.preload'),
 
   paginationContainer: document.querySelector('.js-pagination'),
+
+  footerLightbox: document.querySelector('.js-footer-light-box'),
+  footerLightboxOverlay: document.querySelector('.js-footer-light-box-overlay'),
+  footerLightboxWindow: document.querySelector('.js-footer-lightbox-window'),
+  footerLightboxOpenBtn: document.querySelector('.modal-open-btn'),
+  footerLightboxCloseBtn: document.querySelector('.footer-lightbox-close-btn'),
+  teamList: document.querySelector('.js-team-list'),
 };
