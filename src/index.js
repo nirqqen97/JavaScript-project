@@ -1,5 +1,7 @@
+
 import axios from 'axios'; 
 import refs from './js/refs';
+
 
 refs.hideMessage.classList.add('clear');
 refs.searchForm.addEventListener('submit', onClickBtnSearch);
@@ -30,7 +32,7 @@ async function fetchFilmotekaPopularFilms(){
 
 function onClickBtnSearch(evt) {
   evt.preventDefault();
-  if(refs.input.value===''){  
+  if(refs.input.value===''){      
     fetchFilmotekaPopularFilms();
     return;
   }
