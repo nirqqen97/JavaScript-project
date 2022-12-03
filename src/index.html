@@ -4,69 +4,90 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="./css/styles.css" rel="stylesheet">
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link href="./css/styles.css" rel="stylesheet" />
     <title>Filmoteka</title>
   </head>
   <body>
     <header class="header">
-      <div class="container">                
+      <div class="container">
         <nav class="site-nav">
           <div class="site-nav__logo">
-            <button onclick="document.location='index.html'" type="text" class="button">
+            <button
+              onclick="document.location='index.html'"
+              type="text"
+              class="button"
+            >
               <svg width="24" height="24" aria-label="Go to the main page">
                 <use href="./svg/symbol-defs.svg#icon-film-1"></use>
               </svg>
-            </button> 
-            <span class="site-nav__logo-name">Filmoteka</span> 
-          </div>                         
+            </button>
+            <span class="site-nav__logo-name">Filmoteka</span>
+          </div>
           <ul class="site-nav__menu">
             <li class="site-nav__menu--line">
-              <button  onclick="document.location='index.html'"type="text" class="button">HOME</button>
+              <button
+                onclick="document.location='index.html'"
+                type="text"
+                class="button"
+              >
+                HOME
+              </button>
             </li>
             <li class="site-nav__menu-item">
-              <button  onclick="document.location='library.html'" type="text"  class="button">MY LIBRARY</button>
-            </li>                        
-          </ul>                    
+              <button
+                onclick="document.location='library.html'"
+                type="text"
+                class="button"
+              >
+                MY LIBRARY
+              </button>
+            </li>
+          </ul>
         </nav>
         <form class="search__form" id="search-form">
-          <input class="input"
+          <input
+            class="input"
             type="text"
             name="searchQuery"
             autocomplete="off"
-            placeholder="Movie search"            
-          />      
+            placeholder="Movie search"
+          />
           <button type="submit" class="button button__submit">
             <svg width="12" height="12" aria-label="submit button">
               <use href="./svg/symbol-defs.svg#icon-search-2-1"></use>
             </svg>
-          </button>            
-          <p class="massage">Search result not successful. Enter the correct movie name and</p>
-        </form>                 
-      </div>     
-  </header>
-
-  <main>
-    <div class="container">
-      <div class="filmoteka">      
+          </button>
+          <p class="message">
+            Search result not successful. Enter the correct movie name and
+          </p>
+        </form>
       </div>
-    </div>   
-  </main>
+    </header>
 
-  <footer class="footer">
-    <div class="container">
-      <p> ©  2020 | All Rights Reserved | </p>
-      <div class="footer__item">
-        <p>Developed with </p>
+    <main>
+      <div class="container">
+        <div class="filmoteka"></div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2020 | All Rights Reserved |</p>
+        <div class="footer__item">
+          <p>Developed with</p>
           <svg class="footer__icon" width="10" height="10" aria-label="heart">
             <use href="./svg/symbol-defs.svg#icon-favorite-1"></use>
           </svg>
-        <p>by GoIT Students</p>
-      </div>   
-    </div>   
-  </footer>   
-    
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="./index.js" type="module"></script>
+          <p>by GoIT Students</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
