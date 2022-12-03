@@ -3,6 +3,7 @@ export const refs = {
   input: document.getElementById('input'),
   searchForm: document.getElementById('search-form'),
   filmCards: document.querySelector('.js-film-cards'),
+  hideMessage: document.querySelector('js-hide-message'),
 
   searchBtn: document.querySelector('.js-search-btn'),
 
@@ -29,3 +30,4 @@ export const refs = {
 
   paginationContainer: document.querySelector('.js-pagination'),
 };
+
